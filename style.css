@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
 
 :root {
-  --bg-color: #6F4E37;
-  --primary-color: #ECB176;
-  --secundary-color: #ffffff;
+  --bg-color: #000000;
+  --primary-color: #ffffff;
+  --secundary-color: #000000;
   --font: Gluten;
 }
 
@@ -76,3 +76,46 @@ span{
 .grafico{
     margin-top: 3rem;
 }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--secundary-color); 
+}
+
+h1 {
+    color: var(--secundary-color); 
+}
+
+nav a {
+    color: var(--secundary-color); 
+}
+
+footer {
+    color: var(--secundary-color); 
+}
+
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+    .graficos-container__texto {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+  
+  nav a {
+    transition: all 0.3s ease;
+  }
+  nav a:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
